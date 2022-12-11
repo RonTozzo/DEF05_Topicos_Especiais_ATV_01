@@ -172,26 +172,30 @@
       </div>
       <!-- about section -->
       <!-- software section -->
-      <div id="spa" class="software">
+      <div class="software">
          <div class="container-fluid">
-            <div class="row d_flex">
-               <div class="col-md-6">
-                  <div class="titlepage">
-                     <h2>SPA (Single Page Application)</h2>
-                     <p>De maneira geral, em uma aplicação SPA, o carregamento dos recursos (como CSS, JavaScript e HTML das páginas) ocorre apenas uma única vez: na primeira vez em que o usuário acessa a aplicação.
-                        Nesse primeiro acesso, todo o conteúdo já é transferido para o cliente. A partir deste momento, quando o usuário transitar pelas páginas da aplicação, não será necessário mais fazer requisições ao servidor para a carga dessas novas páginas: o conteúdo relacionado a elas já foi baixado no primeiro acesso.
-                        O conteúdo da página é carregado via JavaScript, código este que é justamente gerado com o uso de bibliotecas que auxiliam na construção de SPA's.</p>
-                     <a class="read_more" href="#">Click here</a>
-                  </div>
+           <div class="row d_flex">
+             <div class="col-md-6">
+               <div class="titlepage">
+                 <h2>SPA<br />(Single Page Application)</h2>
+                 <p class="spaText">
+                   Single Page Applications (SPA) são aplicações cuja
+                   funcionalidade está concentrada em uma única página. Ao invés de
+                   recarregar toda a página ou redirecionar o usuário para uma
+                   página nova, apenas o conteúdo principal é atualizado de forma
+                   assíncrona, mantendo toda a estrutura da página estática.
+                 </p>
+                 <a class="read_more" href="#">Click here</a>
                </div>
-               <div class="col-md-6 padding_right2">
-                  <div class="software_img">
-                     <figure><img src="images/software_img.jpg" alt="#"/></figure>
-                  </div>
+             </div>
+             <div class="col-md-6 padding_right2">
+               <div class="software_img">
+                 <figure><img src="images/software_img.jpg" alt="#" /></figure>
                </div>
-            </div>
+             </div>
+           </div>
          </div>
-      </div>
+       </div>
       <!-- software section -->
       <!-- Our  team section -->
       <div id="team" class="team">
@@ -286,6 +290,14 @@
       <script>
          // This example adds a marker to indicate the position of Bondi Beach in Sydney,
          // Australia.
+         const spaText = document.querySelector('.spaText');
+         const buttonSpaText = document.querySelector('.read_more');
+
+         buttonSpaText.addEventListener('click', function (event) {
+            event.preventDefault();
+            spaText.innerText = 'Olha só, funcionou!';
+         });
+
          function initMap() {
            var map = new google.maps.Map(document.getElementById('map'), {
              zoom: 11,
