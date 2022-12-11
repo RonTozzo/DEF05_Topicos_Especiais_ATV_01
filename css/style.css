@@ -321,7 +321,7 @@ button {
 /** banner section **/
 
 .banner_main {
-     background: url(../images/banner.jpg);
+     background: url(../images/neymarbanner.jpg);
      padding: 310px 0px 0px 0px;
      background-size: 100% 100%;
      background-repeat: no-repeat;
@@ -349,7 +349,6 @@ button {
      font-size: 56px;
      line-height: 50px;
      text-transform: uppercase;
-     letter-spacing: 90px;
 }
 
 .text-bg ul.social_team {
@@ -520,11 +519,11 @@ button {
 }
 
 .software .software_img figure img {
-     height: 660px;
+     height: 750px;
 }
 
 .software .titlepage {
-     max-width: 539px;
+     max-width: 650px;
      width: 100%;
      float: right;
 }
@@ -679,6 +678,7 @@ button {
 }
 
 .team .team_box figure {
+     text-align: center;
      margin: 0;
 }
 
